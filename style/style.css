@@ -75,10 +75,14 @@
 	font-family: 'Poppins', sans-serif;
 	margin-bottom: 17px;
 }
-.title__natus {
+.title__principal {
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: bold;
 	font-size: 40px;
 	line-height: 48px;
-	margin-bottom: 24px;
+	text-align: center;
+	color: #333333;
 }
 .container__products {
 	margin-bottom: 90px;
@@ -146,7 +150,9 @@
 	text-align: center;
 	padding-bottom: 42px;
 }
-
+.container__grid__products {
+	display: grid;
+}
 .container__card {
 	margin-top: 6px;
 	padding-top: 37px;
@@ -157,6 +163,7 @@
 	background-image: url("../assets/images/Iphone.png");
 	background-repeat: no-repeat;
 	background-position: bottom;
+	box-shadow: 16px 16px 48px rgba(0, 0, 0, 0.0994678);
 }
 .info__card {
 	display: flex;
@@ -182,9 +189,21 @@
 	background-color: #ffffff;
 	margin-top: 26px;
 }
+.price__card {
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 24px;
+	/* identical to box height, or 150% */
+	margin-top: 9px;
+	text-transform: uppercase;
+	color: #333333;
+}
 #card__goldenIphone {
 	width: 345px;
 	height: 224px;
+	padding-right: 171px;
 	background-image: url("../assets/images/GoldenIphone.png");
 	background-repeat: no-repeat;
 	background-position: bottom;
@@ -193,6 +212,7 @@
 #card__watch {
 	width: 345px;
 	height: 224px;
+	padding-right: 231px;
 	background-image: url("../assets/images/Watch.png");
 	background-repeat: no-repeat;
 	background-position: bottom;
@@ -204,5 +224,34 @@
 @media (min-width: 1440px) {
 	.container__grid {
 		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
 	}
+}
+/*SECTION CARUSEL*/
+#section__carousel {
+	width: 375px;
+	height: 768px;
+	background-color: #ffffff;
+}
+/*SECTION OFFER*/
+#section__offer {
+	background-color: #fdf2ff;
+	padding: 54px 15px 64px 15px;
+}
+.container__menu {
+	display: flex;
+	flex-direction: column;
+	background-color: #ffffff;
+}
+.container__option__menu {
+	display: flex;
+	flex-direction: row;
+}
+#underline {
+	font-family: Source Sans Pro;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 24px;
+	color: #333333;
 }
