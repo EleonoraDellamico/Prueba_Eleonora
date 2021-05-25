@@ -4,15 +4,24 @@
 	box-sizing: border-box;
 }
 
-/* SECTION COMAND*/
-#section__comand {
-	background-color: #fdf2ff;
-	padding: 53px 15px 48px;
+.section {
+	max-width: 1330px;
+	margin: 0 auto;
+	padding: 48px 16px;
 }
+
+.section__background {
+	width: 100%;
+	background-color: #fdf2ff;
+}
+
+/* SECTION COMAND*/
+
 .container__comand {
 	display: flex;
 	margin-bottom: 21px;
 }
+
 .container__image__comand {
 	margin-right: 16px;
 }
@@ -21,14 +30,17 @@
 	width: 48px;
 	height: 36px;
 }
+
 #icon__client {
 	width: 48px;
 	height: 48px;
 }
+
 #icon__shop {
 	width: 36px;
 	height: 48px;
 }
+
 .title {
 	font-family: 'Poppins', sans-serif;
 	font-weight: bold;
@@ -37,6 +49,7 @@
 	line-height: 32px;
 	color: #333333;
 }
+
 .text {
 	font-family: 'Source Sans Pro', sans-serif;
 	font-style: normal;
@@ -47,27 +60,36 @@
 	mix-blend-mode: normal;
 	opacity: 0.5;
 }
+
 /*MEDIAQUERIES SECTION COMAND*/
 @media (min-width: 1440px) {
+	.section {
+		max-width: 1330px;
+		margin: 0 auto;
+	}
+
 	#section__comand {
 		display: flex;
-		padding: 101px 135px 80px 135px;
 	}
+
 	.container__comand {
 		margin-right: 30px;
 		margin-bottom: 0px;
 	}
 }
+
 /*Section error*/
 #section__natus__error {
 	padding: 61px 15px 90px 15px;
 }
+
 .container__title__natus {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	text-align: center;
 }
+
 .subtitle {
 	text-transform: uppercase;
 	font-size: 16px;
@@ -75,6 +97,7 @@
 	font-family: 'Poppins', sans-serif;
 	margin-bottom: 17px;
 }
+
 .title__principal {
 	font-family: Poppins;
 	font-style: normal;
@@ -84,9 +107,11 @@
 	text-align: center;
 	color: #333333;
 }
+
 .container__products {
 	margin-bottom: 90px;
 }
+
 .container__image__products {
 	display: flex;
 	margin-top: 90px;
@@ -99,9 +124,11 @@
 	margin-top: 40px;
 	text-align: center;
 }
+
 .span__products {
 	margin-bottom: 8px;
 }
+
 .link__products {
 	font-family: Source Sans Pro;
 	font-style: normal;
@@ -115,44 +142,52 @@
 /*MEDIAQUERIES SECTION PRODUCTS*/
 @media (min-width: 1440px) {
 	#section__natus__error {
-		display: flex;
-		flex-direction: column;
-		padding: 77px 0 106px 0;
+		max-width: 1330px;
+		margin: 0 auto;
 	}
+
+	.container__products {
+		margin-bottom: 0;
+		margin-top: 90px;
+		width: 25%;
+	}
+
+	.container__image__products {
+		align-items: flex-end;
+		margin-top: 0;
+	}
+
+	.container__image__products img {
+		height: 158px;
+	}
+
 	.container__title__natus {
 		margin-left: 435px;
 		margin-right: 435px;
 	}
+
 	.container__allProducts {
 		display: flex;
-		justify-content: center;
-		padding-left: 135px;
-		padding-right: 135px;
-	}
-	#product__laptop {
-		margin-right: 114px;
-	}
-	#product__phone {
-		margin-right: 190px;
-	}
-	#product__ipad {
-		margin-right: 143px;
 	}
 }
+
 /*SECTION SHOP*/
 #section__shop {
 	background-color: #fdf2ff;
 	padding: 45px 15px 80px 15px;
 }
+
 .container__title__shop {
 	display: flex;
 	flex-direction: column;
 	text-align: center;
 	padding-bottom: 42px;
 }
+
 .container__grid__products {
 	display: grid;
 }
+
 .container__card {
 	margin-top: 6px;
 	padding-top: 37px;
@@ -165,14 +200,17 @@
 	background-position: bottom;
 	box-shadow: 16px 16px 48px rgba(0, 0, 0, 0.0994678);
 }
+
 .info__card {
 	display: flex;
 	flex-direction: column;
 	margin-left: 32px;
 }
+
 .text__card {
 	margin-top: 9px;
 }
+
 .btn__card {
 	width: 170px;
 	height: 48px;
@@ -189,6 +227,7 @@
 	background-color: #ffffff;
 	margin-top: 26px;
 }
+
 .price__card {
 	font-family: Poppins;
 	font-style: normal;
@@ -200,6 +239,7 @@
 	text-transform: uppercase;
 	color: #333333;
 }
+
 #card__goldenIphone {
 	width: 345px;
 	height: 224px;
@@ -209,6 +249,7 @@
 	background-position: bottom;
 	background-position-x: right;
 }
+
 #card__watch {
 	width: 345px;
 	height: 224px;
@@ -218,35 +259,59 @@
 	background-position: bottom;
 	background-position-x: right;
 }
+
 #card__laptops {
 	background-image: url("../assets/images/Laptops.png");
 }
+
 @media (min-width: 1440px) {
 	.container__grid {
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
 	}
 }
+
 /*SECTION CARUSEL*/
 #section__carousel {
 	width: 375px;
 	height: 768px;
 	background-color: #ffffff;
 }
+
 /*SECTION OFFER*/
-#section__offer {
-	background-color: #fdf2ff;
-	padding: 54px 15px 64px 15px;
+
+.container__general__infoSale {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
+
+.container__titleCountDown {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.container__countdown {
+	margin-top: 15px;
+}
+
 .container__menu {
 	display: flex;
 	flex-direction: column;
 	background-color: #ffffff;
+	width: 345px;
+	height: 176px;
+	padding: 37px 32px 42px 32px;
+	margin-top: 43px;
+	box-shadow: 16px 16px 48px rgba(0, 0, 0, 0.0994678);
 }
+
 .container__option__menu {
 	display: flex;
 	flex-direction: row;
 }
+
 #underline {
 	font-family: Source Sans Pro;
 	font-style: normal;
@@ -254,4 +319,93 @@
 	font-size: 16px;
 	line-height: 24px;
 	color: #333333;
+	position: relative;
+	box-shadow: inset 0 -0.5em 0 #c86dd7;
+}
+
+.optionMenu,
+#underline {
+	margin-right: 10px;
+	margin-top: 41px;
+}
+
+.container__image__offer {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	margin-top: 48px;
+	margin-bottom: 42px;
+	width: 196px;
+}
+
+.image__sale {
+	position: sticky;
+}
+
+.container__image__discount {
+	position: absolute;
+	top: 0;
+	right: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 80px;
+	height: 80px;
+}
+
+.image__discount {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.discount__percentage {
+	color: #ffffff;
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 32px;
+	z-index: 999;
+}
+
+.price {
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 32px;
+	color: #333333;
+}
+
+.wrong__price {
+}
+
+/* MEDIAQUERIES SECTION OFFER */
+@media (min-width: 1440px) {
+	.container__general__infoSale {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.container__menu {
+		width: 28%;
+		height: auto;
+	}
+
+	.container__option__menu {
+		flex-direction: column;
+	}
+
+	.container__image__offer {
+		width: 28%;
+	}
+
+	.container__details__offer {
+		width: 28%;
+	}
+
+	.image__sale {
+		width: 351px;
+	}
 }
