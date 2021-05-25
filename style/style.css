@@ -68,7 +68,7 @@
 	align-items: center;
 	text-align: center;
 }
-.subtitle__natus {
+.subtitle {
 	text-transform: uppercase;
 	font-size: 16px;
 	line-height: 24px;
@@ -113,15 +113,17 @@
 	#section__natus__error {
 		display: flex;
 		flex-direction: column;
-		padding: 77px 135px 106px 135px;
+		padding: 77px 0 106px 0;
 	}
 	.container__title__natus {
-		margin-left: 345px;
-		margin-right: 345px;
+		margin-left: 435px;
+		margin-right: 435px;
 	}
 	.container__allProducts {
 		display: flex;
 		justify-content: center;
+		padding-left: 135px;
+		padding-right: 135px;
 	}
 	#product__laptop {
 		margin-right: 114px;
@@ -131,5 +133,76 @@
 	}
 	#product__ipad {
 		margin-right: 143px;
+	}
+}
+/*SECTION SHOP*/
+#section__shop {
+	background-color: #fdf2ff;
+	padding: 45px 15px 80px 15px;
+}
+.container__title__shop {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	padding-bottom: 42px;
+}
+
+.container__card {
+	margin-top: 6px;
+	padding-top: 37px;
+	width: 345px;
+	height: 480px;
+	background: #ffffff;
+	border-radius: 3px;
+	background-image: url("../assets/images/Iphone.png");
+	background-repeat: no-repeat;
+	background-position: bottom;
+}
+.info__card {
+	display: flex;
+	flex-direction: column;
+	margin-left: 32px;
+}
+.text__card {
+	margin-top: 9px;
+}
+.btn__card {
+	width: 170px;
+	height: 48px;
+	font-family: Source Sans Pro;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 24px;
+	text-align: center;
+	color: #c86dd7;
+	border: 1px solid #c86dd7;
+	box-sizing: border-box;
+	border-radius: 24px;
+	background-color: #ffffff;
+	margin-top: 26px;
+}
+#card__goldenIphone {
+	width: 345px;
+	height: 224px;
+	background-image: url("../assets/images/GoldenIphone.png");
+	background-repeat: no-repeat;
+	background-position: bottom;
+	background-position-x: right;
+}
+#card__watch {
+	width: 345px;
+	height: 224px;
+	background-image: url("../assets/images/Watch.png");
+	background-repeat: no-repeat;
+	background-position: bottom;
+	background-position-x: right;
+}
+#card__laptops {
+	background-image: url("../assets/images/Laptops.png");
+}
+@media (min-width: 1440px) {
+	.container__grid {
+		display: grid;
 	}
 }
