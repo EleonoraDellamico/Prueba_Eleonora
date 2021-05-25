@@ -1,0 +1,135 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* SECTION COMAND*/
+#section__comand {
+	background-color: #fdf2ff;
+	padding: 53px 15px 48px;
+}
+.container__comand {
+	display: flex;
+	margin-bottom: 21px;
+}
+.container__image__comand {
+	margin-right: 16px;
+}
+
+.icon__commad {
+	width: 48px;
+	height: 36px;
+}
+#icon__client {
+	width: 48px;
+	height: 48px;
+}
+#icon__shop {
+	width: 36px;
+	height: 48px;
+}
+.title {
+	font-family: 'Poppins', sans-serif;
+	font-weight: bold;
+	font-style: normal;
+	font-size: 24px;
+	line-height: 32px;
+	color: #333333;
+}
+.text {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 24px;
+	color: #333333;
+	mix-blend-mode: normal;
+	opacity: 0.5;
+}
+/*MEDIAQUERIES SECTION COMAND*/
+@media (min-width: 1440px) {
+	#section__comand {
+		display: flex;
+		padding: 101px 135px 80px 135px;
+	}
+	.container__comand {
+		margin-right: 30px;
+		margin-bottom: 0px;
+	}
+}
+/*Section error*/
+#section__natus__error {
+	padding: 61px 15px 90px 15px;
+}
+.container__title__natus {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+.subtitle__natus {
+	text-transform: uppercase;
+	font-size: 16px;
+	line-height: 24px;
+	font-family: 'Poppins', sans-serif;
+	margin-bottom: 17px;
+}
+.title__natus {
+	font-size: 40px;
+	line-height: 48px;
+	margin-bottom: 24px;
+}
+.container__products {
+	margin-bottom: 90px;
+}
+.container__image__products {
+	display: flex;
+	margin-top: 90px;
+	justify-content: center;
+}
+
+.container__list {
+	display: flex;
+	flex-direction: column;
+	margin-top: 40px;
+	text-align: center;
+}
+.span__products {
+	margin-bottom: 8px;
+}
+.link__products {
+	font-family: Source Sans Pro;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 24px;
+	text-align: center;
+	color: #333333;
+}
+
+/*MEDIAQUERIES SECTION PRODUCTS*/
+@media (min-width: 1440px) {
+	#section__natus__error {
+		display: flex;
+		flex-direction: column;
+		padding: 77px 135px 106px 135px;
+	}
+	.container__title__natus {
+		margin-left: 345px;
+		margin-right: 345px;
+	}
+	.container__allProducts {
+		display: flex;
+		justify-content: center;
+	}
+	#product__laptop {
+		margin-right: 114px;
+	}
+	#product__phone {
+		margin-right: 190px;
+	}
+	#product__ipad {
+		margin-right: 143px;
+	}
+}
