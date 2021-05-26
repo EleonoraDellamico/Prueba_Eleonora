@@ -18,14 +18,40 @@
     </head>
 
     <body>
-         <!--SECTION HEADER-->
-         <section class= "section__header__background">
-            <div class="section" id="section__header">
-                <div class="container__navBar">
-
+        <!--SECTION HEADER-->
+        <section class="section__header__background">
+            <div id="section__header">
+                <div class="navbar">
+                    <div class="navbar__logo">
+                        <img src="./assets/images/RELAP.png" alt="Logo relap">
+                        <input class="input__navbar"type="text">
+                    </div>
+                    <div class="navbar__browser">
+                        <ul>
+                            <li><a href="#"></a>Store</li>
+                            <li><a href="#"></a>Features</li>
+                            <li><a href="#"></a>About</li>
+                            <li><a href="#"></a>Blog</li>
+                            <li><a href="#"></a>News</li>
+                        </ul>
+                    </div>
+                    <div class="navbar__menu__mobile">
+                        <img src="./assets/images/Heart.png" alt="">
+                        <img src="./assets/images/Buy.png" alt="">
+                        <img id="hamburger" src="./assets/images/Hamburger.png" alt="" onclick="toggle">
+                        </img>
+                        <div id="list__menu" class="navbar__menu__mobile__list">
+                            <ul>
+                                <li><a href="#"></a>Store</li>
+                                <li><a href="#"></a>Features</li>
+                                <li><a href="#"></a>About</li>
+                                <li><a href="#"></a>Blog</li>
+                                <li><a href="#"></a>News</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-            </div>
-         </section>
+        </section>
         <!--SECTION COMAND-->
         <section class="section__background">
             <div class="section" id="section__comand">
@@ -183,7 +209,14 @@
                 <div class="container__titleCountDown">
                     <h3 class="title__principal">Magni dolores</h3>
                     <div class="container__countdown">
-                        <p>12 : 17 : 08 : 42</p>
+                        <p class="countdown" id="time-left">12</p>
+                        <p class="semicolon">:</p>
+
+                        <p class="countdown" id="hours-left">17</p>
+                        <p class="semicolon">:</p>
+                        <p class="countdown" id="minutes-left">08</p>
+                        <p class="semicolon">:</p>
+                        <p class="countdown" id="seconds-left">42</p>
                     </div>
                 </div>
                 <div class="container__general__infoSale">
@@ -248,8 +281,10 @@
                             molestias excepturi sint occaecati cupiditate non provident.</p>
                     </div>
                     <div class="container__input__application">
-                        <input type="text" placeholder="your email">
-                        <button class="btn__signIn">Subscribe</button>
+                        <form id="form">
+                            <input type="email" id="email" placeholder="your email">
+                            <button class="btn__signIn">Subscribe</button>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -286,24 +321,24 @@
             </div>
         </section>
         <!--SECTION CONTACT-->
-       <section id="section__contact">
-             <div class="container__contact">
-                        <div class="contact__copyright">
-                            <p class="text">Copyright 2019. All Rights Reserved.</p>
-                        </div>
-                        <div class="contact__socialMedia">
-                            <img class="contact__icon" src="./assets/images/Facebook.png" alt="Logo Facebook">
-                            <img class="contact__icon" src="./assets/images/Twitter.png" alt="Logo Twitter">
-                            <img class="contact__icon" src="./assets/images/Instagram.png" alt="Logo Instagram">
-                        </div>
-                        <div class="container__cardsBank">
-                            <img class="cardsBank__icon" src="./assets/images/PayPal.png" alt="Card Paypal">
-                            <img class="cardsBank__icon" src="./assets/images/Visa.png" alt="Card Visa">
-                            <img class="cardsBank__icon" src="./assets/images/MasterCard.png" alt="Card Master Card">
+        <section id="section__contact">
+            <div class="container__contact">
+                <div class="contact__copyright">
+                    <p class="text">Copyright 2019. All Rights Reserved.</p>
+                </div>
+                <div class="contact__socialMedia">
+                    <img class="contact__icon" src="./assets/images/Facebook.png" alt="Logo Facebook">
+                    <img class="contact__icon" src="./assets/images/Twitter.png" alt="Logo Twitter">
+                    <img class="contact__icon" src="./assets/images/Instagram.png" alt="Logo Instagram">
+                </div>
+                <div class="container__cardsBank">
+                    <img class="cardsBank__icon" src="./assets/images/PayPal.png" alt="Card Paypal">
+                    <img class="cardsBank__icon" src="./assets/images/Visa.png" alt="Card Visa">
+                    <img class="cardsBank__icon" src="./assets/images/MasterCard.png" alt="Card Master Card">
 
-                        </div>
-                    </div>
-       </section> 
+                </div>
+            </div>
+        </section>
         <script src="index.js"></script>
     </body>
 
