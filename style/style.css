@@ -471,15 +471,16 @@
 /*SECTION SIGN IN*/
 #section__signIn {
 	background-color: #3023ae;
-	margin: 0 auto;
-	padding: 64px 15px;
+	width: 100%;
+	/* margin: 0 auto;
+	padding: 64px 15px; */
 	background-image: url("../assets/images/Oval-two.png");
 	background-repeat: no-repeat;
-	background-attachment: fixed;
 	background-position: bottom;
 	background-position-x: right;
 }
 .container__application,
+.container__info__application,
 .container__input__application {
 	display: flex;
 	flex-direction: column;
@@ -539,4 +540,91 @@ input {
 	color: #ffffff;
 	margin-top: 16px;
 	border: none;
+}
+/* MEDIAQUERIES SECTION SIGN */
+@media (min-width: 1440px) {
+	.container__application {
+		flex-direction: row;
+		justify-content: space-around;
+		align-items: center;
+		height: 348px;
+	}
+	.container__info__application,
+	.container__input__application {
+		width: 33%;
+	}
+	.container__input__application {
+		flex-direction: row;
+	}
+	.btn__signIn {
+		margin-top: 0;
+		margin-left: 30px;
+	}
+}
+/*SECTION FOOTER */
+.container__list__footer {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 40px;
+}
+.container__list__footer span {
+	line-height: 200%;
+}
+.strongText {
+	font-family: Source Sans Pro;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 24px;
+	color: #333333;
+}
+@media (min-width: 1440px) {
+	.container__footer {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+	}
+	.container__list__footer {
+		width: 18%;
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+/*SECTION CONTACT */
+#section__contact {
+	background-color: #fdf2ff;
+}
+.container__contact {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 40vh;
+	justify-content: space-around;
+	border-top: 1px solid rgb(212, 212, 212);
+	padding: 40px;
+}
+
+.contact__socialMedia {
+	display: flex;
+	width: 50%;
+	justify-content: space-around;
+}
+
+.container__cardsBank {
+	display: flex;
+	justify-content: space-around;
+}
+
+@media (min-width: 1440px) {
+	.container__contact {
+		flex-direction: row;
+		justify-content: space-around;
+	}
+	.contact__socialMedia {
+		width: 10%;
+	}
+	.container__cardsBank {
+		width: 15%;
+	}
 }
