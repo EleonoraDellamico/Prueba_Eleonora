@@ -14,7 +14,17 @@
 	width: 100%;
 	background-color: #fdf2ff;
 }
-
+/*SECTION HEADER*/
+.section__header__background {
+	background: linear-gradient(224.72deg, #3023ae -1%, #c86dd7 100.5%);
+	width: 100%;
+}
+#section__header {
+	background-image: url("../assets/images/Pc_Header.png");
+	background-repeat: no-repeat;
+	height: 60vh;
+	background-position: bottom;
+}
 /* SECTION COMAND*/
 
 .container__comand {
@@ -599,7 +609,7 @@ input {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	height: 40vh;
+	height: 30vh;
 	justify-content: space-around;
 	border-top: 1px solid rgb(212, 212, 212);
 	padding: 40px;
@@ -613,6 +623,7 @@ input {
 
 .container__cardsBank {
 	display: flex;
+	width: 60%;
 	justify-content: space-around;
 }
 
@@ -620,6 +631,7 @@ input {
 	.container__contact {
 		flex-direction: row;
 		justify-content: space-around;
+		height: 9vh;
 	}
 	.contact__socialMedia {
 		width: 10%;
