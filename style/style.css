@@ -22,11 +22,29 @@
 #section__header {
 	background-image: url("../assets/images/Pc_Header.png");
 	background-repeat: no-repeat;
-	height: 60vh;
+	height: 90vh;
 	background-position: bottom;
 	max-width: 1330px;
 	margin: 0 auto;
 	padding: 25px 15px;
+}
+.subtitle__header {
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 24px;
+	text-transform: uppercase;
+	color: #ffffff;
+	margin-top: 15px;
+}
+.title__header {
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 56px;
+	line-height: 64px;
+	color: #ffffff;
 }
 /*NAVBAR*/
 .navbar {
@@ -130,7 +148,7 @@
 .navbar__menu__mobile > .navbar__menu__mobile--container:first-child {
 	margin-left: 0;
 }
-
+/*MEDIAQUERIES NAVBAR*/
 @media (min-width: 1440px) {
 	.input__navbar {
 		display: block;
@@ -224,7 +242,7 @@
 	}
 }
 
-/*Section error*/
+/*SECTION SHOW DEVICES*/
 #section__natus__error {
 	padding: 61px 15px 90px 15px;
 }
@@ -285,7 +303,7 @@
 	color: #333333;
 }
 
-/*MEDIAQUERIES SECTION PRODUCTS*/
+/*MEDIAQUERIES SECTION SHOW DEVICE*/
 @media (min-width: 1440px) {
 	#section__natus__error {
 		max-width: 1330px;
@@ -316,6 +334,7 @@
 		display: flex;
 	}
 }
+/*END SECTION SHOW DEVICE*/
 
 /*SECTION SHOP*/
 #section__shop {
@@ -332,29 +351,19 @@
 
 .container__grid__products {
 	display: grid;
+	grid-row-gap: 16px;
 }
 
 .container__card {
-	margin-top: 6px;
-	padding-top: 37px;
-	width: 345px;
-	height: 480px;
 	background: #ffffff;
 	border-radius: 3px;
-	background-image: url("../assets/images/Iphone.png");
-	background-repeat: no-repeat;
-	background-position: bottom;
+	padding: 37px 32px;
 	box-shadow: 16px 16px 48px rgba(0, 0, 0, 0.0994678);
 }
 
 .info__card {
 	display: flex;
 	flex-direction: column;
-	margin-left: 32px;
-}
-
-.text__card {
-	margin-top: 9px;
 }
 
 .btn__card {
@@ -380,51 +389,65 @@
 	font-weight: bold;
 	font-size: 16px;
 	line-height: 24px;
-	/* identical to box height, or 150% */
 	margin-top: 9px;
 	text-transform: uppercase;
 	color: #333333;
 }
-
+#card__iphone {
+	background-image: url("../assets/images/Iphone.png");
+	background-repeat: no-repeat;
+	background-position: bottom;
+	height: 60vh;
+}
 #card__goldenIphone {
-	width: 345px;
-	height: 224px;
-	padding-right: 171px;
 	background-image: url("../assets/images/GoldenIphone.png");
 	background-repeat: no-repeat;
 	background-position: bottom;
 	background-position-x: right;
+	height: 28vh;
 }
 
 #card__watch {
-	width: 345px;
-	height: 224px;
-	padding-right: 231px;
 	background-image: url("../assets/images/Watch.png");
 	background-repeat: no-repeat;
 	background-position: bottom;
 	background-position-x: right;
+	height: 28vh;
 }
 
 #card__laptops {
 	background-image: url("../assets/images/Laptops.png");
+	height: 60vh;
+	background-repeat: no-repeat;
+	background-position: bottom;
 }
-
+/*MEDIAQUERIES SECTION SHOP*/
 @media (min-width: 1440px) {
 	.container__grid__products {
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
-		grid-template-rows: 1fr 1fr;
+		grid-template-rows: 271px 311px;
+		grid-gap: 30px;
+	}
+	#card__iphone {
+		background-size: contain;
+	}
+	#card__laptops {
+		display: flex;
+		height: 27vh;
+		grid-column-start: 2;
+		grid-column-end: 4;
+		background-image: url("../assets/images/Laptops__versionDesk.png");
+		background-position: right;
 	}
 }
-
+/*END SECTION SHOP*/
 /*SECTION CAROUSEL PRODUCTS*/
 #section__carouselProducts {
-	height: 768px;
+	width: 100%;
 }
 
 /*SECTION OFFER*/
-
 .container__general__infoSale {
 	display: flex;
 	flex-direction: column;
@@ -437,20 +460,33 @@
 	align-items: flex-start;
 }
 
-.container__countdown {
-	margin-top: 15px;
+.countdown {
 	display: flex;
-	align-items: center;
+	justify-content: space-around;
+	text-align: center;
 }
-.countdown,
+.container-day,
+.container-hour,
+.container-minute,
+.container-second {
+	display: flex;
+}
+
+.day,
+.hour,
+.minute,
+.second,
 .semicolon {
 	font-family: Poppins;
 	font-style: normal;
-	font-weight: 700;
+	font-weight: bold;
 	font-size: 24px;
 	line-height: 32px;
+	/* identical to box height, or 133% */
+
 	color: #333333;
 }
+
 .container__menu {
 	display: flex;
 	flex-direction: column;
@@ -621,21 +657,136 @@
 		width: 370px;
 	}
 }
+/* END SECTION OFFER */
 /*SECOND CAROUSEL POSTS*/
 #section__carouselPosts {
 	position: relative;
+	width: 100%;
+}
+.container__title__carouselPost {
+	display: flex;
+	flex-direction: column;
+	height: 10vh;
+	align-items: baseline;
+}
+.slider-container {
+	height: 470px;
+	padding: 48px 0;
+	margin: 0 auto;
+	position: relative;
+	border-radius: 0.5rem;
+	overflow: hidden;
+	margin-top: 4rem;
+	display: flex;
+	flex-wrap: nowrap;
+}
+.slide {
+	position: relative;
+	height: 100%;
+	background: #ffffff;
+	box-shadow: 16px 16px 48px rgba(0, 0, 0, 0.0994678);
+	border-radius: 3px;
+	justify-content: flex-end;
+	flex: 0 0 100%;
 }
 
+.slide > img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 240px;
+	object-fit: cover;
+}
+
+.slide > div {
+	position: absolute;
+	top: 260px;
+	left: 0;
+	padding: 0 8px;
+}
+.btn-container {
+	display: flex;
+	justify-content: center;
+	margin-top: 48px;
+}
+
+.prevBtn,
+.nextBtn {
+	border: 1px solid #c86dd7;
+	padding: 16px;
+	border-radius: 50%;
+	width: 48px;
+	height: 48px;
+	margin-right: 8px;
+}
+.prevBtn:hover,
+.nextBtn:hover {
+	color: grey;
+}
+small {
+	font-family: Source Sans Pro;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 12px;
+	line-height: 24px;
+	color: #333333;
+}
+
+#first-post,
+#fourth-post {
+	background-image: url(../assets/images/Post-one.png);
+	background-repeat: no-repeat;
+	background-position: top;
+}
+#second-post,
+#fifth-post {
+	background-image: url(../assets/images/Post-two.png);
+	background-repeat: no-repeat;
+	background-position: top;
+}
+#third-post,
+#sixth-post {
+	background-image: url(../assets/images/Post-three.png);
+	background-repeat: no-repeat;
+	background-position: top;
+}
 .section__signIn--oval1 {
 	position: absolute;
 	background-image: url("../assets/images/Oval-one.png");
 	background-repeat: no-repeat;
-
 	bottom: -50px;
 	right: 30px;
 	width: 100px;
 	height: 100px;
 	z-index: 10;
+}
+
+/* MEDIAQUERIES SECTION CAROUSEL POSTS */
+@media (min-width: 1440px) {
+	.slide {
+		display: flex;
+		flex-direction: column;
+		height: 100%;
+		background: #ffffff;
+		box-shadow: 16px 16px 48px rgba(0, 0, 0, 0.0994678);
+		border-radius: 3px;
+		justify-content: flex-end;
+		flex: 0 0 432.66666667px;
+	}
+
+	.slide {
+		margin-right: 24px;
+	}
+
+	.slide:last-child {
+		margin-right: 0;
+	}
+
+	.slide > div {
+		width: 80%;
+		padding: 0 24px;
+	}
 }
 
 /*SECTION SIGN IN*/
@@ -644,9 +795,6 @@
 	width: 100%;
 	overflow: hidden;
 	position: relative;
-	/* margin: 0 auto;
-	padding: 64px 15px; */
-
 	background-repeat: no-repeat;
 	background-position: bottom;
 	background-position-x: right;

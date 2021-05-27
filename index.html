@@ -36,20 +36,26 @@
                         </ul>
                     </div>
                     <div class="navbar__menu__mobile">
-                        <div class="navbar__menu__mobile--container"><img src="./assets/images/Heart.png" alt="" /></div>
+                        <div class="navbar__menu__mobile--container"><img src="./assets/images/Heart.png" alt="" />
+                        </div>
                         <div class="navbar__menu__mobile--container"><img src="./assets/images/Buy.png" alt="" /></div>
-                        <div class="navbar__menu__mobile--container"  onclick="toggle"><img id="hamburger" src="./assets/images/Hamburger.png" alt="" /></div>
+                        <div class="navbar__menu__mobile--container" onclick="toggle"><img id="hamburger"
+                                src="./assets/images/Hamburger.png" alt="" /></div>
                         <div id="list__menu" class="navbar__menu__mobile__list">
                             <ul>
                                 <li><a href="#"></a>Store</li>
                                 <li><a href="#"></a>Features</li>
                                 <li><a href="#"></a>About</li>
-                                <li><a href="#"></a>Blog</li>
-                                <li><a href="#"></a>News</li>
                             </ul>
                         </div>
                     </div>
                     <input class="input__navbar mobile" type="text" />
+                </div>
+                <div class="container__title__header">
+                    <h5 class="subtitle__header">minim veniam</h5>
+                    <h3 class="title__header">Ut labore et
+                        dolore </h3>
+                    <button class="btn__signIn">Subscribe</button>
                 </div>
         </section>
         <!--SECTION COMAND-->
@@ -170,7 +176,7 @@
             </div>
             <!--Fisrt Product Shop-->
             <div class="container__grid__products">
-                <div class="container__card">
+                <div class="container__card" id="card__iphone">
                     <div class="info__card">
                         <h4 class="title">Sed ut perspiciatis</h4>
                         <p class="text text__card">Unde omnis iste natus error</p>
@@ -202,74 +208,154 @@
             </div>
         </section>
         <!--SECTION CAROUSEL-->
-        <section id="section__carouselProducts"></section>
+        <section id="section__carouselProducts">
+            <div class="section">
+
+
+            </div>
+        </section>
         <!--SECTION OFFER-->
         <section class="section__background">
             <div class="section" id="section__offer">
                 <div class="container__titleCountDown">
                     <h3 class="title__principal">Magni dolores</h3>
                     <div class="container__countdown">
-                        <p class="countdown" id="time-left">12</p>
-                        <p class="semicolon">:</p>
-
-                        <p class="countdown" id="hours-left">17</p>
-                        <p class="semicolon">:</p>
-                        <p class="countdown" id="minutes-left">08</p>
-                        <p class="semicolon">:</p>
-                        <p class="countdown" id="seconds-left">42</p>
+                        <div class="countdown">
+                            <div class="container-day">
+                                <h3 class="day">Time</h3>
+                                <p class="semicolon">:</p>
+                            </div>
+                            <div class="container-hour">
+                                <h3 class="hour">Time</h3>
+                                <p class="semicolon">:</p>
+                            </div>
+                            <div class="container-minute">
+                                <h3 class="minute">Time</h3>
+                                <p class="semicolon">:</p>
+                            </div>
+                            <div class="container-second">
+                                <h3 class="second">Time</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container__general__infoSale">
+                        <div class="container__menu">
+                            <div class="container__title__menu">
+                                <h4 class="title">Voluptate</h4>
+                            </div>
+                            <div class="container__option__menu">
+                                <strong id="underline">Phones</strong>
+                                <p class="text optionMenu">Electronics</p>
+                                <p class="text optionMenu">Appliances</p>
+                                <p class="text optionMenu">Clothes</p>
+                                <p class="text optionMenu">Kids</p>
+                            </div>
+                        </div>
+                        <div class="container__image__offer">
+                            <div class="image__offer">
+                                <img class="image__sale" src="./assets/images/Headphone.png" alt="headphone" />
+                            </div>
+                            <div class="container__image__discount">
+                                <p class="discount__percentage"> -15%</p>
+                                <img class="image__discount" src="./assets/images/Discount.png" alt="Discount" />
+                            </div>
+                        </div>
+                        <div class="container__details__offer">
+                            <div class="container__title__details__offer">
+                                <h4 class="title"> Quis autem vel eum iure reprehenderit </h4>
+                            </div>
+                            <div class="container__price__details__offer">
+                                <p class="price">$199</p>
+                                <p class="wrong-price">$299</p>
+                            </div>
+                            <div class="container__text__detailsOffer">
+                                <p class="text">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
+                                    consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut
+                                    labore
+                                    et dolore magnam aliquam quaerat voluptatem.</p>
+                            </div>
+                            <div class="container__sold">
+                                <p class="sold__details">Sold:120</p>
+                                <p class="sold__details">Quantitaty:500</p>
+                            </div>
+                            <div class="container__bar">
+                                <div class="bar"></div>
+                            </div>
+                            <div class="container__btn__offer">
+                                <button class="btn__offer">Add to card</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="container__general__infoSale">
-                    <div class="container__menu">
-                        <div class="container__title__menu">
-                            <h4 class="title">Voluptate</h4>
-                        </div>
-                        <div class="container__option__menu">
-                            <strong id="underline">Phones</strong>
-                            <p class="text optionMenu">Electronics</p>
-                            <p class="text optionMenu">Appliances</p>
-                            <p class="text optionMenu">Clothes</p>
-                            <p class="text optionMenu">Kids</p>
-                        </div>
-                    </div>
-                    <div class="container__image__offer">
-                        <div class="image__offer">
-                            <img class="image__sale" src="./assets/images/Headphone.png" alt="headphone" />
-                        </div>
-                        <div class="container__image__discount">
-                            <p class="discount__percentage"> -15%</p>
-                            <img class="image__discount" src="./assets/images/Discount.png" alt="Discount" />
-                        </div>
-                    </div>
-                    <div class="container__details__offer">
-                        <div class="container__title__details__offer">
-                            <h4 class="title"> Quis autem vel eum iure reprehenderit </h4>
-                        </div>
-                        <div class="container__price__details__offer">
-                            <p class="price">$199</p>
-                            <p class="wrong-price">$299</p>
-                        </div>
-                        <div class="container__text__detailsOffer">
-                            <p class="text">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
-                                consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore
-                                et dolore magnam aliquam quaerat voluptatem.</p>
-                        </div>
-                        <div class="container__sold">
-                            <p class="sold__details">Sold:120</p>
-                            <p class="sold__details">Quantitaty:500</p>
-                        </div>
-                        <div class="container__bar">
-                            <div class="bar"></div>
-                        </div>
-                        <div class="container__btn__offer">
-                            <button class="btn__offer">Add to card</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </section>
         <!--SECTION SECOND CAROUSEL-->
         <section id="section__carouselPosts">
+            <div class="section">
+                <div class="container__title__carouselPost">
+                    <h5 class="subtitle">velit esse</h5>
+                    <h3 class="title__principal">Quam nihil </h3>
+                </div>
+                <div class="slider-container js-carousel" id="carouselPosts">
+                    <div class="slide posts js-carousel" id="first-post">
+                        <img src="./assets/images/Post-one.png" />
+                        <div>
+                            <h3 class="title">Vel illum qui dolorem
+                                eum fugiat </h3>
+                            <small>June 01/ 2019</small>
+                        </div>
+                    </div>
+                    <div class="slide posts js-carousel" id="second-post">
+                        <img src="./assets/images/Post-two.png" />
+                        <div>
+                            <h3 class="title">Quo voluptas nulla
+                                pariatur</h3>
+                            <small>June 01/ 2019</small>
+                        </div>
+                    </div>
+                    <div class="slide posts js-carousel" id="third-post">
+                        <img src="./assets/images/Post-three.png" />
+                        <div>
+                            <h3 class="title">At vero eos et
+                                accusamus et iusto</h3>
+                            <small>June 01/ 2019</small>
+                        </div>
+                    </div>
+                    <div class="slide posts js-carousel" id="fourth-post">
+                        <img src="./assets/images/Post-one.png" />
+                        <div>
+                            <h3 class="title">Vel illum qui dolorem
+                                eum fugiat </h3>
+                            <small>June 01/ 2019</small>
+                        </div>
+                    </div>
+                    <div class="slide posts js-carousel" id="fifth-post">
+                        <img src="./assets/images/Post-two.png" />
+                        <div>
+                            <h3 class="title">Quo voluptas nulla
+                                pariatur</h3>
+                            <small>June 01/ 2019</small>
+                        </div>
+                    </div>
+                    <div class="slide posts js-carousel" id="sixth-post">
+                        <img src="./assets/images/Post-three.png" />
+                        <div>
+                            <h3 class="title">At vero eos et
+                                accusamus et iusto</h3>
+                            <small>June 01/ 2019</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-container">
+                    <div class="prevBtn" id="prevBtnPosts">
+                        <img src="./assets/images/Prev.png" alt="">
+                    </div>
+                    <div class="nextBtn" id="nextBtnPosts">
+                        <img src="./assets/images/Next.png" alt="">
+                    </div>
+                </div>
+
+            </div>
+
             <div class="section__signIn--oval1"></div>
         </section>
         <!--SECTION SIGNIN -->
@@ -344,6 +430,8 @@
             </div>
         </section>
         <script src="index.js"></script>
+
+
     </body>
 
 </html>
