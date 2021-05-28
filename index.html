@@ -38,9 +38,10 @@
                     <div class="navbar__menu__mobile">
                         <div class="navbar__menu__mobile--container"><img src="./assets/images/Heart.png" alt="" />
                         </div>
-                        <div class="navbar__menu__mobile--container"id="shop__icon"><img src="./assets/images/Buy.png" alt="" />
-                            <p  class="oval__shop__text">0</p>
-                            <img id="oval__shop"src="./assets/images/shop_oval.png" alt="">
+                        <div class="navbar__menu__mobile--container" id="shop__icon"><img src="./assets/images/Buy.png"
+                                alt="" />
+                            <p class="oval__shop__text">0</p>
+                            <img id="oval__shop" src="./assets/images/shop_oval.png" alt="">
                         </div>
                         <div class="navbar__menu__mobile--container" onclick="toggle"><img id="hamburger"
                                 src="./assets/images/Hamburger.png" alt="" /></div>
@@ -54,12 +55,23 @@
                     </div>
                     <input class="input__navbar mobile" type="text" />
                 </div>
-                <div class="container__title__header">
-                    <h5 class="subtitle__header">minim veniam</h5>
-                    <h3 class="title__header">Ut labore et
-                        dolore </h3>
-                    <button class="btn__signIn">Subscribe</button>
-                </div>
+                <section id="section__sliderHeader">
+                    <div class="container__title__header">
+                        <h5 class="subtitle__header">minim veniam</h5>
+                        <h3 class="title__header">Ut labore et
+                            dolore </h3>
+                        <button class="btn__orange">Subscribe</button>
+                    </div>
+                    <div class="container__btn__header">
+                        <div class="container__btnNext__header">
+                            <img src="./assets/images/prev_header.png" alt="">
+                        </div>
+                        <div class="container__btnPrev__header">
+                            <img src="./assets/images/next_header.png" alt="">
+                        </div>
+                    </div>
+                </section>
+
         </section>
         <!--SECTION COMAND-->
         <section class="section__background">
@@ -71,7 +83,8 @@
                     </div>
                     <div class="container__text__comand">
                         <h4 class="title title__comand">Quis nostrud</h4>
-                        <p class=" text text__comand">Voluptatem quia voluptas aspernatur aut odit aut fugit.</p>
+                        <p class=" text text__comand">Voluptatem quia voluptas aspernatur aut odit aut fugit.
+                        </p>
                     </div>
                 </div>
                 <!--Second image-->
@@ -112,7 +125,8 @@
             <div class="container__title__natus">
                 <h5 class="subtitle">natus error</h5>
                 <h3 class=" title title__principal">Unde omnis iste</h3>
-                <p class="text">Adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore
+                <p class="text">Adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et
+                    dolore
                     magnam aliquam quaerat voluptatem.</p>
             </div>
             <!--SECTION IMAGES PRODUCTOS-->
@@ -172,48 +186,175 @@
             </div>
         </section>
         <!--SECTION Shop-->
-        <section id="section__shop" class="section__background">
-            <div class="container__title__shop">
-                <h5 class="subtitle">deserunt</h5>
-                <h3 class="title__principal">Mollit anim</h3>
-            </div>
-            <!--Fisrt Product Shop-->
-            <div class="container__grid__products">
-                <div class="container__card" id="card__iphone">
-                    <div class="info__card">
-                        <h4 class="title">Sed ut perspiciatis</h4>
-                        <p class="text text__card">Unde omnis iste natus error</p>
-                        <button class="btn__card">Shop now</button>
-                    </div>
+        <section class="section__background">
+            <div class="section" id="section__shop">
+                <div class="container__title__shop">
+                    <h5 class="subtitle">deserunt</h5>
+                    <h3 class="title__principal">Mollit anim</h3>
                 </div>
-                <!--Second Product Shop-->
-                <div class="container__card" id="card__goldenIphone">
-                    <div class="info__card" id="info__card__GoldenIphone">
-                        <h4 class="title">Totam rem aperiam</h4>
-                        <p class="price__card">$199</p>
+                <!--Fisrt Product Shop-->
+                <div class="container__grid__products">
+                    <div class="container__card" id="card__iphone">
+                        <div class="info__card" id="info__card__iphone">
+                            <h4 class="title">Sed ut perspiciatis</h4>
+                            <p class="text text__card">Unde omnis iste natus error</p>
+                            <button class="btn__card">Shop now</button>
+                        </div>
+                        <div class="container__display__img">
+                            <img id="img" src="./assets/images/Iphone.png" alt="">
+                        </div>
                     </div>
-                </div>
-                <!--Third Product Shop-->
-                <div class="container__card" id="card__watch">
-                    <div class="info__card">
-                        <h4 class="title">Eaque ipsa </h4>
-                        <h5 class="price__card">$99</h5>
+                    <!--Second Product Shop-->
+                    <div class="container__card" id="card__goldenIphone">
+                        <div class="info__card" id="info__card__goldenIphone">
+                            <h4 class="title">Totam rem aperiam</h4>
+                            <p class="text text__card">$199</p>
+                        </div>
+                        <div class="container__img__versionDesk__GoldenIphone">
+                            <img id="img" src="./assets/images/GoldenIphone.png" alt="">
+                        </div>
                     </div>
-                </div>
-                <!--last Product Shop-->
-                <div class="container__card" id="card__laptops">
-                    <div class="info__card">
-                        <h4 class="title">Quae ab illo inventore</h4>
-                        <p class="text text__card">Architecto beatae vitae dicta sunt</p>
-                        <button class="btn__card">Shop now</button>
+                    <!--Third Product Shop-->
+                    <div class="container__card" id="card__watch">
+                        <div class="info__card">
+                            <h4 class="title">Eaque ipsa </h4>
+                            <p class="text text__card">$99</p>
+                        </div>
+                        <img id="img" src="./assets/images/Watch.png" alt="">
+                    </div>
+                    <!--last Product Shop-->
+                    <div class="container__card" id="card__laptops">
+                        <div class="info__card">
+                            <h4 class="title">Sed ut perspiciatis</h4>
+                            <p class="text text__card">Unde omnis iste natus error</p>
+                            <button class="btn__card">Shop now</button>
+                        </div>
+                        <img id="img" src="./assets/images/Laptops.png" alt="">
                     </div>
                 </div>
             </div>
         </section>
         <!--SECTION FIRST CAROUSEL PRODUCTS-->
-        <!-- <section id="section__carouselProducts">
+        <section id="section__carouselProducts">
             <div class="section">
-                        <div class="container__title__carouselProducts">
+                <div class="container__general__titleMenu__carouselProducts">
+                    <div class="container__title__carouselProducts">
+                        <h3 class="title__principal">Unde omnis </h3>
+                    </div>
+                    <div class="container__option__carouselProducts">
+                        <strong class="text">Phones</strong>
+                        <p class="text">Electronics</p>
+                        <p class="text">Appliances</p>
+                        <p class="text">Clothes</p>
+                        <p class="text">Kids</p>
+                    </div>
+                </div>
+                <!--aqui empieza el carousel-->
+                <div class="slider-container" id="carouselProducts">
+                    <div class="slideProducts object" id="first-products">
+                        <img class="image__carousel__product" src="./assets/images/Headphone_red_carousel.svg" />
+                        <div>
+                            <h3 class="title">Nemo enim
+                                ipsam </h3>
+                            <small class="text">$180</small>
+                        </div>
+                        <div class="container__btnShop__carouselProducts">
+                            <img src="./assets/images/btnShopCarousel.png" alt="button shop" />
+                        </div>
+                    </div>
+                    <div class="slideProducts  object js-carousel" id="second-products">
+                        <img class="image__carousel__product" src="./assets/images/Headphone.png" />
+                        <div>
+                            <h3 class="title">Sed quia
+                                consequuntur </h3>
+                            <small class="text">$180</small>
+                        </div>
+                        <div class="container__btnShop__carouselProducts">
+                            <img src="./assets/images/btnShopCarousel.png" alt="button shop" />
+                        </div>
+                    </div>
+                    <div class="slideProducts  object" id="third-products">
+                        <img class="image__carousel__product" src="./assets/images/Alexa_carousel.svg" />
+                        <div>
+                            <h3 class="title">Aut odit aut
+                                fugit </h3>
+                            <small class="text">$180</small>
+                        </div>
+                        <div class="container__btnShop__carouselProducts">
+                            <img src="./assets/images/btnShopCarousel.png" alt="button shop" />
+                        </div>
+                    </div>
+                    <div class="slideProducts  object" id="fourth-products">
+                        <img class="image__carousel__product" src="./assets/images/Alexa2_carousel.svg" />
+                        <div>
+                            <h3 class="title">Aut odit aut
+                                fugit </h3>
+                            <small class="text">$180</small>
+                        </div>
+                        <div class="container__btnShop__carouselProducts">
+                            <img src="./assets/images/btnShopCarousel.png" alt="button shop" />
+                        </div>
+                    </div>
+                    <div class="slideProducts  object" id="fifth-products">
+                        <img class="image__carousel__product" src="./assets/images/Headphone_red_carousel.svg" />
+                        <div>
+                            <h3 class="title">Nemo enim
+                                ipsam </h3>
+                            <small class="text">$180</small>
+                        </div>
+                        <div class="container__btnShop__carouselProducts">
+                            <img src="./assets/images/btnShopCarousel.png" alt="button shop" />
+                        </div>
+                    </div>
+                    <div class="slideProducts object" id="sixth-products">
+                        <img class="image__carousel__product" src="./assets/images/Headphone.png" />
+                        <div>
+                            <h3 class="title">Sed quia
+                                consequuntur </h3>
+                            <small class="text">$180</small>
+                        </div>
+                        <div class="container__btnShop__carouselProducts">
+                            <img src="./assets/images/btnShopCarousel.png" alt="button shop" />
+                        </div>
+                    </div>
+                    <div class="slideProducts object" id="seventh-products">
+                        <img class="image__carousel__product" src="./assets/images/Alexa2_carousel.svg" />
+                        <div>
+                            <h3 class="title">Aut odit aut
+                                fugit</h3>
+                            <small class="text">$180</small>
+                        </div>
+                        <div class="container__btnShop__carouselProducts">
+                            <img src="./assets/images/btnShopCarousel.png" alt="button shop" />
+                        </div>
+                    </div>
+                    <div class="slideProducts  object" id="eighth-products">
+                        <img class="image__carousel__product" src="./assets/images/Alexa_carousel.svg" />
+                        <div>
+                            <h3 class="title">Quia voluptas
+                                aspernatur </h3>
+                            <small class="text">$180</small>
+                        </div>
+                        <div class="container__btnShop__carouselProducts">
+                            <img src="./assets/images/btnShopCarousel.png" alt="button shop" />
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-container">
+                    <div class="prevBtn" id="prevBtnProducts">
+                        <img src="./assets/images/Prev.png" alt="">
+                    </div>
+                    <div class="nextBtn" id="nextBtnProducts">
+                        <img src="./assets/images/Next.png" alt="">
+                    </div>
+                </div>
+
+
+            </div>
+
+        </section>
+        </section>
+        <!-- <div class="container__title__carouselProducts">
                             <h3 class="title__principal">Unde omnis </h3>
                             <div class="container__option__carouselProducts">
                                 <strong class="text">Phones</strong>
@@ -450,7 +591,7 @@
                     <div class="container__input__application">
                         <form id="form">
                             <input type="email" id="email" placeholder="your email">
-                            <button class="btn__signIn">Subscribe</button>
+                            <button class="btn__orange">Subscribe</button>
                         </form>
                     </div>
                 </div>

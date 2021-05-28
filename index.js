@@ -6,6 +6,47 @@ function toggle() {
 	listMenu.classList.toggle('show');
 }
 hamburger.addEventListener('click', toggle);
+//CAROUSEL PRODUCTS
+const lengthProducts = 8;
+
+let counterProducts = 0;
+
+const carouselProducts = document.getElementById('carouselProducts');
+const slidesProducts = document.querySelectorAll('.slideProductors.object');
+console.log(slidesProducts);
+const nextBtnProducts = document.getElementById('nextBtnProducts');
+const prevBtnProducts = document.getElementById('prevBtnProducts');
+
+nextBtnProducts.addEventListener('click', function() {
+	let auxLengthProducts = window.innerWidth >= 1440 ? 4 : lengthProducts;
+	if (counterProducts < auxLengthProducts) {
+		counterProducts++;
+		let extraSpacingproducts = 0;
+		if (window.innerWidth >= 1440) {
+			extraSpacing = 24 * counterProducts;
+		}
+		carouselProducts.scrollLeft = slidesProducts[0].offsetWidth * counterProducts + extraSpacingproducts;
+		console.log(slidesProducts[0].offsetWidth * counterPosts + extraSpacingproducts);
+		prevBtnProducts.style.visibility = 'visible';
+	} else {
+		nextBtnProducts.style.visibility = 'hidden';
+	}
+});
+
+prevBtnProducts.addEventListener('click', function() {
+	if (counterProducts > 0) {
+		counterProducts--;
+		let extraSpacingproducts = 0;
+		if (window.innerWidth >= 1440) {
+			extraSpacingproducts = 24 * counterProducts;
+		}
+
+		carouselProducts.scrollLeft = slidesProducts[0].offsetWidth * counterProducts + extraSpacingproducts;
+		nextBtnProducts.style.visibility = 'visible';
+	} else {
+		prevBtnProducts.style.visibility = 'hidden';
+	}
+});
 
 // //CAROUSEL POST
 
@@ -116,3 +157,11 @@ function isEmail(email) {
 		email
 	);
 }
+let email = 'juan.sanchezs@gmail.com';
+var email_analized = /^([^]+)@(\w+).(\w+)$/.exec(email);
+console.log(email_analized);
+
+let [ , name, server, dominio ] = email_analized;
+console.log('Nombre del usuario: ' + name);
+console.log('Servidor de Correo: ' + server);
+console.log('Dominio: ' + dominio);
