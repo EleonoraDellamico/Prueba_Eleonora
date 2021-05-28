@@ -439,12 +439,32 @@
 	background-position: bottom;
 	background-size: contain;
 	box-shadow: 16px 16px 48px rgba(0, 0, 0, 0.0994678);
+	padding: 25px 0px 0px 15px;
 }
 .info__card {
 	display: flex;
 	flex-direction: column;
+	padding: 21px;
 }
-.container__display__img {
+#card__iphone {
+	background-image: url("../assets/images/desk_one.png");
+	height: 400px;
+}
+#card__goldenIphone {
+	background-image: url("../assets/images/desk_two.png");
+	height: 224px;
+	background-position: right;
+}
+#card__watch {
+	background-image: url("../assets/images/desk_three.png");
+	height: 224px;
+	background-position: right;
+}
+#card__laptops {
+	background-image: url("../assets/images/desk_four.png");
+	background-position: bottom;
+	height: 400px;
+	background-size: inherit;
 }
 .btn__card {
 	width: 170px;
@@ -491,6 +511,29 @@
 		display: grid;
 		grid-column-start: 2;
 		grid-column-end: 4;
+	}
+	#card__iphone {
+		background-image: url("../assets/images/desk_one.png");
+		height: 477px;
+		background-size: cover;
+	}
+	#card__goldenIphone {
+		background-image: url("../assets/images/desk_two.png");
+		height: 224px;
+		background-position: right;
+		background-size: cover;
+	}
+	#card__watch {
+		background-image: url("../assets/images/desk_three.png");
+		height: 224px;
+		background-position: right;
+		background-size: cover;
+	}
+	#card__laptops {
+		background-image: url("../assets/images/desk_four.png");
+		background-position: right;
+		background-size: cover;
+		height: 224px;
 	}
 }
 /*END SECTION SHOP*/
@@ -548,8 +591,21 @@
 	justify-content: center;
 	margin-top: 48px;
 }
-.container__btnShop__carouselProducts {
+.container__price {
 	display: flex;
+	width: 297px;
+	justify-content: space-between;
+}
+.container__btnShop__carouselProducts {
+	border: 1px solid #c86dd7;
+	padding: 12px;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 38px;
+	height: 38px;
+	margin-right: 2vw;
 }
 
 .prevBtn,

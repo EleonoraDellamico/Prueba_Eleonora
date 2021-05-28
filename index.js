@@ -12,7 +12,7 @@ const lengthProducts = 8;
 let counterProducts = 0;
 
 const carouselProducts = document.getElementById('carouselProducts');
-const slidesProducts = document.querySelectorAll('.slideProductors.object');
+const slidesProducts = document.querySelectorAll('.slideProducts.object');
 console.log(slidesProducts);
 const nextBtnProducts = document.getElementById('nextBtnProducts');
 const prevBtnProducts = document.getElementById('prevBtnProducts');
