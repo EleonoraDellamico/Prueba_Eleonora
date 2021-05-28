@@ -143,25 +143,19 @@ form.addEventListener('submit', (e) => {
 
 function checkInputs() {
 	const emailValue = inputEmail.value.trim();
+	console.log(emailValue);
 	if (emailValue === '') {
 		alert('you have to insert your email');
 	} else if (!isEmail(emailValue)) {
 		alert('The email you have insert is not correct');
-	} else {
+	} else if (isEmail(emailValue)) {
 		alert('Thank You For Subscribing!');
+	} else {
+		alert('Other error');
 	}
 }
 
 function isEmail(email) {
-	return /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/.test(
-		email
-	);
+	const re = /^\w+@[a-zA-Z_]+\.(com|es)(\.[a-z]{2,3})?/gm;
+	return re.test(email);
 }
-let email = 'juan.sanchezs@gmail.com';
-var email_analized = /^([^]+)@(\w+).(\w+)$/.exec(email);
-console.log(email_analized);
-
-let [ , name, server, dominio ] = email_analized;
-console.log('Nombre del usuario: ' + name);
-console.log('Servidor de Correo: ' + server);
-console.log('Dominio: ' + dominio);

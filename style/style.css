@@ -550,6 +550,9 @@
 	display: flex;
 	justify-content: space-between;
 }
+#selected {
+	box-shadow: inset 0 -0.5em 0 #c86dd7;
+}
 .slider-container {
 	height: 470px;
 	padding: 48px 0;
