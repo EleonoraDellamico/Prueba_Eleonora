@@ -120,8 +120,10 @@
 	position: absolute;
 	top: 0;
 	right: 0px;
-	margin-top: 23px;
-	text-align: end;
+	margin-top: 63px;
+	text-align: center;
+	background: linear-gradient(224.72deg, #3023ae -1%, #c86dd7 100.5%);
+	padding: 23px;
 }
 .navbar__menu__mobile__list > ul {
 	list-style: none;
@@ -147,6 +149,29 @@
 
 .navbar__menu__mobile > .navbar__menu__mobile--container:first-child {
 	margin-left: 0;
+}
+#shop__icon {
+	position: relative;
+}
+#oval__shop {
+	position: absolute;
+	top: 0;
+	right: -3%;
+}
+.oval__shop__text {
+	position: absolute;
+	top: -9%;
+	right: 6%;
+	z-index: 999;
+	font-family: Source Sans Pro;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 12px;
+	line-height: 24px;
+
+	text-align: center;
+
+	color: #ffffff;
 }
 /*MEDIAQUERIES NAVBAR*/
 @media (min-width: 1440px) {
@@ -176,6 +201,9 @@
 
 	.navbar__menu__mobile {
 		margin-left: 32px;
+	}
+	.show {
+		display: hidden;
 	}
 }
 
@@ -482,8 +510,6 @@
 	font-weight: bold;
 	font-size: 24px;
 	line-height: 32px;
-	/* identical to box height, or 133% */
-
 	color: #333333;
 }
 
