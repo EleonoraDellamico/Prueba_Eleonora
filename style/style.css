@@ -650,7 +650,7 @@ small {
 		box-shadow: 16px 16px 48px rgba(0, 0, 0, 0.0994678);
 		border-radius: 3px;
 		justify-content: flex-end;
-		flex: 0 0 324.5555555px;
+		flex: 0 0 300.5555555px;
 	}
 
 	.slideProducts {
@@ -662,8 +662,8 @@ small {
 	}
 
 	.slideProducts > div {
-		width: 60%;
-		padding: 0 24px;
+		width: 66%;
+		padding: 0 20px;
 	}
 }
 /*SECTION OFFER*/
