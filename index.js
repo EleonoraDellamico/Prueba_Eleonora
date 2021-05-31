@@ -90,24 +90,6 @@ prevBtnPosts.addEventListener('click', function() {
 	}
 });
 
-// function carousel() {
-// 	if (counter < slides.length - 1) {
-// 		nextBtn.style.display = 'block';
-// 	} else {
-// 		nextBtn.style.display = 'none';
-// 	}
-// 	if (counter > 0) {
-// 		prevBtn.style.display = 'block';
-// 	} else {
-// 		prevBtn.style.display = 'none';
-// 	}
-// 	slides.forEach(function(slide) {
-// 		slide.style.transform = `translateX(-${counter * 100}vh)`;
-// 	});
-// }
-
-// prevBtn.style.display = 'none';
-
 //COUNTDOWN
 const countdown = () => {
 	const countDate = new Date('June 02, 2021 00:00:00').getTime();
